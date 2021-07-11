@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,10 @@
 		043C0BE72695ED0D00301340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043C0BE62695ED0D00301340 /* Assets.xcassets */; };
 		043C0BEA2695ED0D00301340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C0BE82695ED0D00301340 /* LaunchScreen.storyboard */; };
 		043C0BF22695F1AA00301340 /* CustomizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C0BF12695F1AA00301340 /* CustomizeButton.swift */; };
-		043C0BF42695F75B00301340 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C0BF32695F75A00301340 /* Service.swift */; };
 		043C0BF826961A0400301340 /* NearEarthObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C0BF726961A0400301340 /* NearEarthObjects.swift */; };
-		0449217C2696D62D00B77772 /* NeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449217B2696D62D00B77772 /* NeoModel.swift */; };
+		048970A92699C82C0057E68E /* ShowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048970A82699C82C0057E68E /* ShowChartViewController.swift */; };
+		04B13F65269A0E450034D76A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B13F64269A0E450034D76A /* Services.swift */; };
+		BB2A3843D4E1B8CF5D64D386 /* Pods_Asteroid_Neo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD2AAA6BC696E4A93731FA9 /* Pods_Asteroid_Neo_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,12 @@
 		043C0BE92695ED0D00301340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043C0BEB2695ED0D00301340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043C0BF12695F1AA00301340 /* CustomizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButton.swift; sourceTree = "<group>"; };
-		043C0BF32695F75A00301340 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		043C0BF726961A0400301340 /* NearEarthObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEarthObjects.swift; sourceTree = "<group>"; };
-		0449217B2696D62D00B77772 /* NeoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoModel.swift; sourceTree = "<group>"; };
+		048970A82699C82C0057E68E /* ShowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowChartViewController.swift; sourceTree = "<group>"; };
+		04B13F64269A0E450034D76A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		BF295799D8B4B5425F0F939E /* Pods-Asteroid_Neo_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asteroid_Neo_App.debug.xcconfig"; path = "Target Support Files/Pods-Asteroid_Neo_App/Pods-Asteroid_Neo_App.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD2AAA6BC696E4A93731FA9 /* Pods_Asteroid_Neo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asteroid_Neo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FD35D102A787AED94843F8 /* Pods-Asteroid_Neo_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asteroid_Neo_App.release.xcconfig"; path = "Target Support Files/Pods-Asteroid_Neo_App/Pods-Asteroid_Neo_App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2A3843D4E1B8CF5D64D386 /* Pods_Asteroid_Neo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				043C0BDC2695ED0800301340 /* Asteroid_Neo_App */,
 				043C0BDB2695ED0800301340 /* Products */,
+				C42EA982780C0F2F863ABC5C /* Pods */,
+				F1A20CA79F6F340F3E2A24BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +71,68 @@
 		043C0BDC2695ED0800301340 /* Asteroid_Neo_App */ = {
 			isa = PBXGroup;
 			children = (
+				048970AC2699C8460057E68E /* Model */,
+				048970AB2699C8410057E68E /* View */,
+				048970AA2699C83A0057E68E /* Controller */,
+				048970AD2699C84C0057E68E /* Service */,
 				043C0BDD2695ED0800301340 /* AppDelegate.swift */,
 				043C0BDF2695ED0800301340 /* SceneDelegate.swift */,
-				043C0BE12695ED0800301340 /* ViewController.swift */,
-				043C0BF726961A0400301340 /* NearEarthObjects.swift */,
-				043C0BF32695F75A00301340 /* Service.swift */,
-				043C0BF12695F1AA00301340 /* CustomizeButton.swift */,
-				0449217B2696D62D00B77772 /* NeoModel.swift */,
 				043C0BE32695ED0800301340 /* Main.storyboard */,
 				043C0BE62695ED0D00301340 /* Assets.xcassets */,
 				043C0BE82695ED0D00301340 /* LaunchScreen.storyboard */,
 				043C0BEB2695ED0D00301340 /* Info.plist */,
 			);
 			path = Asteroid_Neo_App;
+			sourceTree = "<group>";
+		};
+		048970AA2699C83A0057E68E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043C0BE12695ED0800301340 /* ViewController.swift */,
+				048970A82699C82C0057E68E /* ShowChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		048970AB2699C8410057E68E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043C0BF12695F1AA00301340 /* CustomizeButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		048970AC2699C8460057E68E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043C0BF726961A0400301340 /* NearEarthObjects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048970AD2699C84C0057E68E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04B13F64269A0E450034D76A /* Services.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C42EA982780C0F2F863ABC5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF295799D8B4B5425F0F939E /* Pods-Asteroid_Neo_App.debug.xcconfig */,
+				D6FD35D102A787AED94843F8 /* Pods-Asteroid_Neo_App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1A20CA79F6F340F3E2A24BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCD2AAA6BC696E4A93731FA9 /* Pods_Asteroid_Neo_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043C0BEE2695ED0D00301340 /* Build configuration list for PBXNativeTarget "Asteroid_Neo_App" */;
 			buildPhases = (
+				028E5D229EBD301D6B1FF3ED /* [CP] Check Pods Manifest.lock */,
 				043C0BD62695ED0800301340 /* Sources */,
 				043C0BD72695ED0800301340 /* Frameworks */,
 				043C0BD82695ED0800301340 /* Resources */,
+				7ED52091A1211E4CBD7E7E8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,17 +203,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		028E5D229EBD301D6B1FF3ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Asteroid_Neo_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED52091A1211E4CBD7E7E8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asteroid_Neo_App/Pods-Asteroid_Neo_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Asteroid_Neo_App/Pods-Asteroid_Neo_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Asteroid_Neo_App/Pods-Asteroid_Neo_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		043C0BD62695ED0800301340 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				043C0BE22695ED0800301340 /* ViewController.swift in Sources */,
-				0449217C2696D62D00B77772 /* NeoModel.swift in Sources */,
 				043C0BDE2695ED0800301340 /* AppDelegate.swift in Sources */,
-				043C0BF42695F75B00301340 /* Service.swift in Sources */,
 				043C0BE02695ED0800301340 /* SceneDelegate.swift in Sources */,
+				048970A92699C82C0057E68E /* ShowChartViewController.swift in Sources */,
 				043C0BF22695F1AA00301340 /* CustomizeButton.swift in Sources */,
+				04B13F65269A0E450034D76A /* Services.swift in Sources */,
 				043C0BF826961A0400301340 /* NearEarthObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +398,7 @@
 		};
 		043C0BEF2695ED0D00301340 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF295799D8B4B5425F0F939E /* Pods-Asteroid_Neo_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +416,7 @@
 		};
 		043C0BF02695ED0D00301340 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FD35D102A787AED94843F8 /* Pods-Asteroid_Neo_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
